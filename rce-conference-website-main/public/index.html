@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ICRCE 2025 | International Conference</title>
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body class="bg-slate-50 text-slate-800 overflow-x-hidden">
+        <nav
+            class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all duration-300"
+            id="navbar"
+        >
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+                    <a href="#hero" class="flex items-center gap-3">
+                        <img
+                            id="brand-logo"
+                            src="./images/rce-banner.png"
+                            alt="Logo"
+                            class="h-12 w-auto rounded shadow-sm"
+                        />
+
+                        <div
+                            id="brand-text"
+                            class="hidden lg:flex flex-col justify-center"
+                        >
+                            <span class="font-bold text-xl leading-none tracking-tight text-slate-900">
+                                RCE <span class="text-red-600">2025</span>
+                            </span>
+
+                            <span class="text-[10px] uppercase font-semibold tracking-widest text-slate-500">
+                                International Conference
+                            </span>
+                        </div>
+                    </a>
+
+
+
+                    <ul
+                        class="hidden xl:flex space-x-8 text-sm font-semibold text-slate-600 uppercase tracking-wide"
+                    >
+                        <li><a href="#hero" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#cfp" class="nav-link">Tracks</a></li>
+                        <li>
+                            <a href="#committee" class="nav-link">Committee</a>
+                        </li>
+                        <li>
+                            <a href="#speakers" class="nav-link">Speakers</a>
+                        </li>
+                        <li>
+                            <a href="#schedule" class="nav-link">Schedule</a>
+                        </li>
+                        <li>
+                            <a
+                                href="#guidelines"
+                                class="px-5 py-2.5 bg-red-600 text-white rounded-md hover:bg-red-700 transition shadow-lg shadow-red-200"
+                            >
+                                Submit Paper
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button
+                        id="mobile-menu-btn"
+                        class="xl:hidden text-slate-700 hover:text-red-600 transition flex items-center"
+                    >
+                        <span id="menu-icon"></span>
+                    </button>
+
+
+                </div>
+            </div>
+            <div
+                id="mobile-menu"
+                class="hidden xl:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl"
+            >
+                <a
+                    href="#hero"
+                    class="block px-6 py-4 border-b border-slate-50 hover:bg-red-50 text-slate-700 font-medium"
+                    >Home</a
+                >
+                <a
+                    href="#about"
+                    class="block px-6 py-4 border-b border-slate-50 hover:bg-red-50 text-slate-700 font-medium"
+                    >About</a
+                >
+                <a
+                    href="#cfp"
+                    class="block px-6 py-4 border-b border-slate-50 hover:bg-red-50 text-slate-700 font-medium"
+                    >Call for Papers</a
+                >
+                <a
+                    href="#committee"
+                    class="block px-6 py-4 border-b border-slate-50 hover:bg-red-50 text-slate-700 font-medium"
+                    >Committee</a
+                >
+                <a
+                    href="#speakers"
+                    class="block px-6 py-4 border-b border-slate-50 hover:bg-red-50 text-slate-700 font-medium"
+                    >Speakers</a
+                >
+                <a
+                    href="#schedule"
+                    class="block px-6 py-4 border-b border-slate-50 hover:bg-red-50 text-slate-700 font-medium"
+                    >Schedule</a
+                >
+                <a
+                    href="#guidelines"
+                    class="block px-6 py-4 bg-red-50 text-red-600 font-bold"
+                    >Submit Paper</a
+                >
+            </div>
+        </nav>
+
+        <section
+            id="hero"
+            class="hero-bg min-h-screen flex items-center justify-center relative"
+        >
+            <div
+                class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-90"
+            ></div>
+            <div class="max-w-6xl mx-auto px-4 text-center relative z-10 pt-20">
+                <div class="reveal pt-10">
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/10 backdrop-blur-md mb-8"
+                    >
+                        <span
+                            class="w-2 h-2 rounded-full bg-red-500 animate-pulse"
+                        ></span>
+                        <span
+                            class="text-xs font-bold tracking-widest text-white uppercase"
+                            >Hybrid Mode • Jul 10 - 11, 2025</span
+                        >
+                    </div>
+                    <h1
+                        class="text-4xl md:text-7xl font-bold text-white mb-6 leading-tight tracking-tight"
+                    >
+                        International Conference on:<br />
+                        <span
+                            class="text-transparent bg-clip-text bg-gradient-to-r  from-red-400 to-orange-400"
+                            >Research in Computing and Electronics</span
+                        >
+                    </h1>
+                    <p
+                        class="text-lg md:text-xl text-slate-300 mb-10 max-w-3xl mx-auto font-light leading-relaxed"
+                    >
+                        Join the first International Conference on Recent
+                        Advances in Engineering. Organized by
+                        <strong class="text-white font-bold"
+                            >Ramachandra College of Engineering</strong
+                        >, Andhra Pradesh. Publish your work in
+                        <strong class="font-bold"
+                            >Springer LNEE Series (Scopus)</strong
+                        >
+                        Indexed.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                        <a
+                            href="#guidelines"
+                            class="px-8 py-4 bg-red-600 text-white rounded font-bold hover:bg-red-700 transition shadow-[0_0_20px_rgba(239,68,68,0.5)]"
+                        >
+                            Submit Paper
+                        </a>
+                        <a
+                            href="#cfp"
+                            class="px-8 py-4 bg-transparent border border-white/40 text-white rounded font-bold hover:bg-white hover:text-slate-900 transition"
+                        >
+                            View Tracks
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 border-t border-white/10 pt-10 reveal delay-200 pb-10"
+                >
+                    <div>
+                        <h3 class="text-4xl font-bold text-white">120+</h3>
+                        <p class="text-slate-400 text-sm uppercase mt-1">
+                            Attendees
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-4xl font-bold text-white">15</h3>
+                        <p class="text-slate-400 text-sm uppercase mt-1">
+                            Countries
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold text-white">
+                            Springer LNEE Series
+                        </h3>
+                        <p class="text-slate-400 text-sm uppercase mt-1">
+                            Publication
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-white relative overflow-hidden">
+            <div
+                class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-red-50 rounded-full blur-3xl opacity-50"
+            ></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-1 gap-16 items-center">
+                    <div class="reveal">
+                        <span
+                            class="text-red-600 w-full font-bold uppercase tracking-widest text-sm mb-2 block"
+                            >The Conference</span
+                        >
+                        <h2
+                            class="text-4xl font-bold text-slate-900 mb-6 leading-tight w-full"
+                        >
+                            Strengthening Academia-Industry Linkages
+                        </h2>
+                        <p class="text-slate-600 text-lg mb-6 leading-relaxed">
+                            The primary objective of the conference is to bring
+                            together top researchers, academics, industry
+                            experts, and innovators in Computer Engineering,
+                            Electronics, and Artificial Intelligence/Machine
+                            Learning (AI/ML) to share ideas and discuss progress
+                            that will facilitate the development of
+                            next-generation intelligent systems.
+                        </p>
+                        <p class="text-slate-600 mb-8 leading-relaxed">
+                            The conference combines theory with practical
+                            experience, demonstrating how basic research and
+                            applied improvements collaborate to address
+                            real-world challenges and encouraging individuals
+                            from diverse fields to collaborate on solving
+                            complex problems.
+                        </p>
+<!-- 
+                        <div class="space-y-4">
+                            <div
+                                class="flex items-center gap-4 p-4 bg-slate-50 rounded-lg border border-slate-100"
+                            >
+                                <div
+                                    class="bg-blue-100 p-2 rounded text-blue-600"
+                                >
+                                    <i
+                                        data-lucide="book-open"
+                                        class="w-6 h-6"
+                                    ></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">
+                                        Publication Opportunity
+                                    </h4>
+                                    <p class="text-sm text-slate-500">
+                                        Selected papers will be published in
+                                        Scopus/WoS indexed journals.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="flex items-center gap-4 p-4 bg-slate-50 rounded-lg border border-slate-100"
+                            >
+                                <div
+                                    class="bg-green-100 p-2 rounded text-green-600"
+                                >
+                                    <i data-lucide="users" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">
+                                        Networking
+                                    </h4>
+                                    <p class="text-sm text-slate-500">
+                                        Connect with experts from IITs, NITs,
+                                        and Foreign Universities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="relative reveal delay-200">
+                        <img
+                            src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                            class="rounded-lg shadow-2xl relative z-10 w-full"
+                            alt="Conference"
+                        />
+                        <div
+                            class="absolute -bottom-6 -right-6 w-full h-full border-4 border-red-100 rounded-lg -z-0"
+                        ></div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="cfp" class="py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-20 reveal">
+                    <span
+                        class="text-red-600 font-bold uppercase tracking-widest text-sm"
+                        >Call for Papers</span
+                    >
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-slate-900 mt-2"
+                    >
+                        Conference Tracks
+                    </h2>
+                    <div
+                        class="w-20 h-1 bg-red-600 mx-auto mt-6 rounded-full"
+                    ></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-blue-500 group reveal">
+                        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition">
+                            <i data-lucide="cpu" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Computing & Information Technologies</h3>
+                        <ul class="space-y-2 text-slate-600 text-sm list-disc pl-4 marker:text-blue-500">
+                            <li>Artificial Intelligence & Machine Learning</li>
+                            <li>Deep Learning & Data Science</li>
+                            <li>Cloud Computing & Edge Computing</li>
+                            <li>High-Performance Computing (HPC)</li>
+                            <li>Blockchain Technologies</li>
+                            <li>Human–Computer Interaction (HCI)</li>
+                            <li>Software Engineering & Agile Systems</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-green-500 group reveal delay-100">
+                        <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center text-green-600 mb-6 group-hover:scale-110 transition">
+                            <i data-lucide="zap" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Electronics & Embedded Systems</h3>
+                        <ul class="space-y-2 text-slate-600 text-sm list-disc pl-4 marker:text-green-500">
+                            <li>VLSI Design & Nanoelectronics</li>
+                            <li>Embedded Systems & Microcontrollers</li>
+                            <li>Internet of Things (IoT) & IIoT</li>
+                            <li>Electronic Circuit Design & Simulation</li>
+                            <li>Power Electronics & Energy Systems</li>
+                            <li>RF & Microwave Engineering</li>
+                            <li>Sensors, Actuators, and Instrumentation</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-orange-500 group reveal delay-200">
+                        <div class="w-12 h-12 bg-orange-50 rounded-lg flex items-center justify-center text-orange-600 mb-6 group-hover:scale-110 transition">
+                            <i data-lucide="settings" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Communication & Networking</h3>
+                        <ul class="space-y-2 text-slate-600 text-sm list-disc pl-4 marker:text-orange-500">
+                            <li>Wireless Networks (5G, 6G, Wi-Fi 7)</li>
+                            <li>Optical & Satellite Communication</li>
+                            <li>Antennas, EM Theory & Microwave Systems</li>
+                            <li>Network Security & Cybersecurity</li>
+                            <li>Software-Defined Networks (SDN) & NFV</li>
+                            <li>Next-Generation Communication Technologies</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-purple-500 group reveal">
+                        <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center text-purple-600 mb-6 group-hover:scale-110 transition">
+                            <i data-lucide="bot" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Smart Systems & Automation</h3>
+                        <ul class="space-y-2 text-slate-600 text-sm list-disc pl-4 marker:text-purple-500">
+                            <li>Robotics & Autonomous Systems</li>
+                            <li>Control Systems & Industrial Automation</li>
+                            <li>Smart Cities, Smart Grids & Intelligent Transport</li>
+                            <li>Mechatronics and Advanced Manufacturing</li>
+                            <li>Digital Twins & Cyber-Physical Systems (CPS)</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-red-500 group reveal delay-100">
+                        <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center text-red-600 mb-6 group-hover:scale-110 transition">
+                            <i data-lucide="shield" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Data, Security & Computational Intelligence</h3>
+                        <ul class="space-y-2 text-slate-600 text-sm list-disc pl-4 marker:text-red-500">
+                            <li>Big Data Analytics</li>
+                            <li>Cybersecurity & Forensics</li>
+                            <li>Computational Intelligence & Optimization</li>
+                            <li>Privacy-Preserving Computing</li>
+                            <li>Bioinformatics & Computational Biology</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-yellow-500 group reveal delay-200">
+                        <div class="w-12 h-12 bg-yellow-50 rounded-lg flex items-center justify-center text-yellow-600 mb-6 group-hover:scale-110 transition">
+                            <i data-lucide="atom" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Emerging Technologies</h3>
+                        <ul class="space-y-2 text-slate-600 text-sm list-disc pl-4 marker:text-yellow-500">
+                            <li>Quantum Computing & Quantum Electronics</li>
+                            <li>Nano-Technology & Material Electronics</li>
+                            <li>Green Computing & Sustainable Electronics</li>
+                            <li>Wearable Electronics & Flexible Devices</li>
+                            <li>AR/VR/MR Technologies</li>
+                            <li>Space Electronics & Aerospace Computing</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-indigo-500 lg:col-start-2 group reveal ">
+                        <div class="w-12 h-12 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-600 mb-6 group-hover:scale-110 transition mx-auto">
+                            <i data-lucide="layers" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-center">Multidisciplinary Research</h3>
+                        <ul class="space-y-2 text-slate-600 text-sm list-disc pl-4 marker:text-indigo-500 max-w-xs mx-auto">
+                            <li>AI in Healthcare, Agriculture & Education</li>
+                            <li>FinTech & Smart Business Systems</li>
+                            <li>Environmental Monitoring Systems</li>
+                            <li>Digital Humanities & Social Computing</li>
+                            <li>Engineering Education & Skill Development</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+                <div
+                    class="mt-16 bg-slate-900 rounded-2xl p-8 md:p-12 text-white relative overflow-hidden shadow-2xl reveal"
+                >
+                    <div
+                        class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"
+                    ></div>
+
+                    <div
+                        class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-8"
+                    >
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">
+                                Important Dates for Papaer Submission.
+                            </h3>
+                            <p class="text-slate-400">
+                                Mark your calendar for these deadlines.
+                            </p>
+                        </div>
+                        <div
+                            class="flex flex-wrap justify-center gap-6 md:gap-12"
+                        >
+                            <div class="text-center">
+                                <span
+                                    class="block text-3xl font-bold text-red-500"
+                                    >March 1</span
+                                >
+                                <span
+                                    class="text-sm text-slate-300 uppercase tracking-wider"
+                                    >Starting Date</span
+                                >
+                            </div>
+                            <div
+                                class="w-px h-12 bg-slate-700 hidden md:block"
+                            ></div>
+                            <div class="text-center">
+                                <span
+                                    class="block text-3xl font-bold "
+                                    >June 5</span
+                                >
+                                <span
+                                    class="text-sm text-slate-300 uppercase tracking-wider"
+                                    >Closing Date</span
+                                >
+                            </div>
+                            <div
+                                class="w-px h-12 bg-slate-700 hidden md:block"
+                            ></div>
+                            <div class="text-center">
+                                <span
+                                    class="block text-3xl font-bold text-green-400"
+                                    >June 10</span
+                                >
+                                <span
+                                    class="text-sm text-slate-300 uppercase tracking-wider"
+                                    >Acceptance</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="committee" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 reveal">
+                    <span class="text-red-600 font-bold uppercase tracking-widest text-sm">
+                        Organization
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">
+                        Steering Committee
+                    </h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                    <div class="text-center reveal">
+                        <div class="w-32 h-32 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg">
+                            <img src="https://cdn.rcee.ac.in/static/www/img/home/testimonials/md.png"
+                                alt="Chief Patron"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h4 class="font-bold text-lg">Shri. K. Sai Rohit</h4>
+                        <p class="text-red-600 text-sm font-semibold uppercase">Chief Patron</p>
+                        <p class="text-slate-500 text-xs">Secretary, Ramachandra College of Engineering.</p>
+                    </div>
+
+                    <div class="text-center reveal delay-100">
+                        <div class="w-32 h-32 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg">
+                            <img src="https://cdn.rcee.ac.in/static/www/img/about/profiles/secretary.jpg"
+                                alt="Chief Patron"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h4 class="font-bold text-lg">Shri. K. Venugopal</h4>
+                        <p class="text-red-600 text-sm font-semibold uppercase">Chief Patron</p>
+                        <p class="text-slate-500 text-xs">Chairman, Ramachandra College of Engineering.</p>
+                    </div>
+
+                    <div class="text-center reveal delay-200">
+                        <div class="w-32 h-32 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg">
+                            <img src="https://cdn.rcee.ac.in/static/www/img/about/profiles/2024/principal-aa.jpg"
+                                alt="Patron"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h4 class="font-bold text-lg">Dr. M. Muralidhara Roa</h4>
+                        <p class="text-red-600 text-sm font-semibold uppercase">Patron</p>
+                        <p class="text-slate-500 text-xs">Director, Ramachandra College of Engineering</p>
+                    </div>
+
+                    <div class="text-center reveal delay-300">
+                        <div class="w-32 h-32 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg">
+                            <img src="https://files.rcee.ac.in/static/www/img/about/profiles/2024/dean-rd.jpg"
+                                alt="Patron"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h4 class="font-bold text-lg">Dr. Jarabala Ranga</h4>
+                        <p class="text-red-600 text-sm font-semibold uppercase">Patron</p>
+                        <p class="text-slate-500 text-xs">Dean, Research & Development, RCE</p>
+                    </div>
+
+                    <div class="text-center reveal">
+                        <div class="w-32 h-32 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg">
+                            <img src="https://files.rcee.ac.in/static/www/img/about/profiles/2024/eee.jpg"
+                                alt="Chairman"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h4 class="font-bold text-lg">Dr. S. Subramanya Sarma</h4>
+                        <p class="text-red-600 text-sm font-semibold uppercase">Chairman</p>
+                        <p class="text-slate-500 text-xs">Dean Academics, RCE</p>
+                    </div>
+
+                    <div class="text-center reveal delay-100">
+                        <div class="w-32 h-32 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg">
+                            <img src="https://cdn.rcee.ac.in/static/www/img/about/profiles/2024/dean-placements-aa.jpg"
+                                alt="Coordinator"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h4 class="font-bold text-lg">Dr. A. Chiranjeevi</h4>
+                        <p class="text-red-600 text-sm font-semibold uppercase">Program Co-Ordinator</p>
+                        <p class="text-slate-500 text-xs">Dean of Placement, RCE</p>
+                    </div>
+
+                    <div class="text-center reveal delay-200">
+                        <div class="w-32 h-32 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg">
+                            <img 
+                                src="./images/dr-b-raghavaiah.png"
+                                alt="Dr. B. Raghavaiah, Convener"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h4 class="font-bold text-lg">Dr. B. Raghavaiah</h4>
+                        <p class="text-red-600 text-sm font-semibold uppercase">Convener</p>
+                        <p class="text-slate-500 text-xs">Professor & HoD, ECE, RCE</p>
+                    </div>
+
+                    <div class="text-center reveal delay-300">
+                        <div class="w-32 h-32 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg">
+                            <img 
+                                src="./images/dr-g-chamundeswari.png"
+                                alt="Dr. G. Chamundeswari, Convener"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h4 class="font-bold text-lg">Dr. G. Chamundeswari</h4>
+                        <p class="text-red-600 text-sm font-semibold uppercase">Convener</p>
+                        <p class="text-slate-500 text-xs">Professor & HoD, CSE, RCE</p>
+                    </div>
+
+                    <div class="lg:col-start-2 text-center reveal">
+                        <div class="w-32 h-32 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg">
+                            <img src="images/avinash-bikkina.png"
+                                alt="Dr. Siva Chakra Avinash Bikkina - Co-Convener"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h4 class="font-bold text-lg">Dr. Siva Chakra Avinash Bikkina</h4>
+                        <p class="text-red-600 text-sm font-semibold uppercase">Co-Convener</p>
+                        <p class="text-slate-500 text-xs">Associate Professor, ECE, RCE</p>
+                    </div>
+
+                    <div class="text-center reveal delay-100">
+                        <div class="w-32 h-32 mx-auto bg-slate-100 rounded-full mb-4 overflow-hidden border-4 border-white shadow-lg">
+                            <img src="images/naga-lakshmi-akkineni.png"
+                                alt="Mrs. Naga Lakshmi Harisha Akkineni - Co-Convener"
+                                class="w-full h-full object-cover" />
+                        </div>
+                        <h4 class="font-bold text-lg">Mrs. Naga Lakshmi Harisha Akkineni</h4>
+                        <p class="text-red-600 text-sm font-semibold uppercase">Co-Convener</p>
+                        <p class="text-slate-500 text-xs">Assistant Professor, ECE, RCE</p>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-24 mb-12 reveal">
+            <span class="text-red-600 font-bold uppercase tracking-widest text-sm">
+                Advisory Board
+            </span>
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mt-2">
+                International & National Advisory Committee
+            </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div class="reveal p-4 bg-slate-50 rounded-lg shadow-sm border">
+                <h4 class="font-semibold text-slate-800">Prof. Jaume Anguera</h4>
+                <p class="text-slate-500 text-sm">Universitat Ramon Llull, Spain</p>
+            </div>
+
+            <div class="reveal p-4 bg-slate-50 rounded-lg shadow-sm border">
+                <h4 class="font-semibold text-slate-800">Dr. Tan Shing Chiang</h4>
+                <p class="text-slate-500 text-sm">Multimedia University, Malaysia</p>
+            </div>
+
+            <div class="reveal p-4 bg-slate-50 rounded-lg shadow-sm border">
+                <h4 class="font-semibold text-slate-800">Dr. Lipo-Wang</h4>
+                <p class="text-slate-500 text-sm">NTU Singapore</p>
+            </div>
+
+            <div class="reveal p-4 bg-slate-50 rounded-lg shadow-sm border">
+                <h4 class="font-semibold text-slate-800">Dr. Ahmed Elngar</h4>
+                <p class="text-slate-500 text-sm">Beni-Suef University, Egypt</p>
+            </div>
+
+            <div class="reveal p-4 bg-slate-50 rounded-lg shadow-sm border">
+                <h4 class="font-semibold text-slate-800">Prof. Xiao-Zhi Gao</h4>
+                <p class="text-slate-500 text-sm">University of Eastern Finland, Finland</p>
+            </div>
+
+            <div class="reveal p-4 bg-slate-50 rounded-lg shadow-sm border">
+                <h4 class="font-semibold text-slate-800">Dr. Ratna Kumari V Uppalapati</h4>
+                <p class="text-slate-500 text-sm">JNTUK, India</p>
+            </div>
+
+            <div class="reveal p-4 bg-slate-50 rounded-lg shadow-sm border">
+                <h4 class="font-semibold text-slate-800">Dr. L. Bharathi</h4>
+                <p class="text-slate-500 text-sm">QIS, India</p>
+            </div>
+
+            <div class="reveal p-4 bg-slate-50 rounded-lg shadow-sm border">
+                <h4 class="font-semibold text-slate-800">Dr. R. Ramana Reddy</h4>
+                <p class="text-slate-500 text-sm">JNTUA College of Engineering, Kalikiri, India</p>
+            </div>
+
+        </div>
+            </div>
+        </section>
+
+        <section id="speakers" class="py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div
+                    class="flex flex-col md:flex-row justify-between items-end mb-16 reveal"
+                >
+                    <div>
+                        <span
+                            class="text-red-600 font-bold uppercase tracking-widest text-sm"
+                            >Keynotes</span
+                        >
+                        <h2
+                            class="text-3xl md:text-4xl font-bold text-slate-900 mt-2"
+                        >
+                            Distinguished Speakers
+                        </h2>
+                    </div>
+                    <div class="hidden md:flex gap-2">
+                        <button class="p-2 border rounded hover:bg-slate-200">
+                            <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                        </button>
+                        <button class="p-2 border rounded hover:bg-slate-200">
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500 group reveal"
+                    >
+                        <div class="relative h-80 overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                class="w-full h-full object-cover transition transform group-hover:scale-110 duration-700"
+                                alt="Speaker"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6"
+                            >
+                                <div class="flex gap-4 text-white">
+                                    <a href="#"
+                                        ><i
+                                            data-lucide="linkedin"
+                                            class="w-5 h-5 hover:text-red-400"
+                                        ></i
+                                    ></a>
+                                    <a href="#"
+                                        ><i
+                                            data-lucide="globe"
+                                            class="w-5 h-5 hover:text-red-400"
+                                        ></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-900">
+                                Dr. James Carter
+                            </h3>
+                            <p class="text-red-600 text-sm font-medium mb-2">
+                                MIT, USA
+                            </p>
+                            <p class="text-slate-500 text-sm line-clamp-2">
+                                Expert in Artificial Intelligence and Neural
+                                Networks, with over 200 citations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500 group reveal delay-100"
+                    >
+                        <div class="relative h-80 overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                class="w-full h-full object-cover transition transform group-hover:scale-110 duration-700"
+                                alt="Speaker"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6"
+                            >
+                                <div class="flex gap-4 text-white">
+                                    <a href="#"
+                                        ><i
+                                            data-lucide="linkedin"
+                                            class="w-5 h-5 hover:text-red-400"
+                                        ></i
+                                    ></a>
+                                    <a href="#"
+                                        ><i
+                                            data-lucide="globe"
+                                            class="w-5 h-5 hover:text-red-400"
+                                        ></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-900">
+                                Prof. Sarah Jenkins
+                            </h3>
+                            <p class="text-red-600 text-sm font-medium mb-2">
+                                IIT Delhi, India
+                            </p>
+                            <p class="text-slate-500 text-sm line-clamp-2">
+                                Leading researcher in Sustainable Energy Systems
+                                and Smart Grids.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition duration-500 group reveal delay-200"
+                    >
+                        <div class="relative h-80 overflow-hidden">
+                            <img
+                                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                                class="w-full h-full object-cover transition transform group-hover:scale-110 duration-700"
+                                alt="Speaker"
+                            />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-slate-900/90 to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6"
+                            >
+                                <div class="flex gap-4 text-white">
+                                    <a href="#"
+                                        ><i
+                                            data-lucide="linkedin"
+                                            class="w-5 h-5 hover:text-red-400"
+                                        ></i
+                                    ></a>
+                                    <a href="#"
+                                        ><i
+                                            data-lucide="globe"
+                                            class="w-5 h-5 hover:text-red-400"
+                                        ></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-slate-900">
+                                Dr. Wei Zhang
+                            </h3>
+                            <p class="text-red-600 text-sm font-medium mb-2">
+                                NUS, Singapore
+                            </p>
+                            <p class="text-slate-500 text-sm line-clamp-2">
+                                Pioneer in Robotics, Automation, and
+                                Nanotechnology.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="schedule" class="py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 reveal">
+                    <span
+                        class="text-red-600 font-bold uppercase tracking-widest text-sm"
+                        >Program</span
+                    >
+                    <h2
+                        class="text-3xl md:text-4xl font-bold text-slate-900 mt-2"
+                    >
+                        Tentative Schedule
+                    </h2>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="reveal">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div
+                                class="bg-red-600 text-white font-bold py-2 px-4 rounded shadow-lg"
+                            >
+                                Day 01
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-800">
+                                November 15, 2025
+                            </h3>
+                        </div>
+                        <div
+                            class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden"
+                        >
+                            <div
+                                class="grid grid-cols-1 md:grid-cols-12 gap-4 p-6 border-b border-slate-200 hover:bg-white transition"
+                            >
+                                <div
+                                    class="md:col-span-2 font-bold text-slate-500"
+                                >
+                                    09:00 - 10:00
+                                </div>
+                                <div class="md:col-span-10">
+                                    <h4 class="font-bold text-slate-900">
+                                        Registration & Kit Collection
+                                    </h4>
+                                    <p class="text-sm text-slate-600">
+                                        Main Auditorium Entrance
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="grid grid-cols-1 md:grid-cols-12 gap-4 p-6 border-b border-slate-200 hover:bg-white transition"
+                            >
+                                <div
+                                    class="md:col-span-2 font-bold text-slate-500"
+                                >
+                                    10:00 - 11:30
+                                </div>
+                                <div class="md:col-span-10">
+                                    <h4 class="font-bold text-slate-900">
+                                        Inauguration Ceremony
+                                    </h4>
+                                    <p class="text-sm text-slate-600">
+                                        Lighting of Lamp, Chief Guest Address
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="grid grid-cols-1 md:grid-cols-12 gap-4 p-6 hover:bg-white transition"
+                            >
+                                <div
+                                    class="md:col-span-2 font-bold text-slate-500"
+                                >
+                                    11:30 - 13:00
+                                </div>
+                                <div class="md:col-span-10">
+                                    <h4 class="font-bold text-slate-900">
+                                        Keynote Session I
+                                    </h4>
+                                    <p class="text-sm text-slate-600">
+                                        Speaker: Dr. James Carter
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reveal">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div
+                                class="bg-slate-700 text-white font-bold py-2 px-4 rounded shadow-lg"
+                            >
+                                Day 02
+                            </div>
+                            <h3 class="text-xl font-bold text-slate-800">
+                                November 16, 2025
+                            </h3>
+                        </div>
+                        <div
+                            class="bg-slate-50 rounded-xl border border-slate-200 overflow-hidden"
+                        >
+                            <div
+                                class="grid grid-cols-1 md:grid-cols-12 gap-4 p-6 border-b border-slate-200 hover:bg-white transition"
+                            >
+                                <div
+                                    class="md:col-span-2 font-bold text-slate-500"
+                                >
+                                    09:30 - 12:30
+                                </div>
+                                <div class="md:col-span-10">
+                                    <h4 class="font-bold text-slate-900">
+                                        Technical Paper Presentations
+                                    </h4>
+                                    <div class="flex flex-wrap gap-2 mt-2">
+                                        <span
+                                            class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded"
+                                            >Track 1: Hall A</span
+                                        >
+                                        <span
+                                            class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded"
+                                            >Track 2: Hall B</span
+                                        >
+                                        <span
+                                            class="text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded"
+                                            >Track 3: Hall C</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="grid grid-cols-1 md:grid-cols-12 gap-4 p-6 hover:bg-white transition"
+                            >
+                                <div
+                                    class="md:col-span-2 font-bold text-slate-500"
+                                >
+                                    14:00 - 16:00
+                                </div>
+                                <div class="md:col-span-10">
+                                    <h4 class="font-bold text-slate-900">
+                                        Valedictory & Awards
+                                    </h4>
+                                    <p class="text-sm text-slate-600">
+                                        Prize Distribution for Best Paper
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="guidelines" class="py-24 bg-slate-900 text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-3xl font-bold">Submission Guidelines</h2>
+                    <p class="text-slate-400 mt-2">
+                        Please follow these instructions before submitting your
+                        manuscript.
+                    </p>
+                </div>
+
+                <div
+                    class="bg-slate-800/50 border border-slate-700 rounded-2xl p-8 md:p-12 reveal"
+                >
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center font-bold shrink-0"
+                            >
+                                1
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">
+                                    Paper Format
+                                </h4>
+                                <p class="text-slate-400 text-sm">
+                                    Papers must be submitted in PDF format,
+                                    following the standard IEEE double-column
+                                    format. Maximum length is 6 pages.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center font-bold shrink-0"
+                            >
+                                2
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">
+                                    Plagiarism Policy
+                                </h4>
+                                <p class="text-slate-400 text-sm">
+                                    All submissions will be checked for
+                                    plagiarism. Similarity index must be below
+                                    15%.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div
+                                class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center font-bold shrink-0"
+                            >
+                                3
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">
+                                    Submission Portal
+                                </h4>
+                                <p class="text-slate-400 text-sm">
+                                    We use EasyChair/Microsoft CMT for handling
+                                    submissions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mt-10 pt-10 border-t border-slate-700 flex flex-col sm:flex-row gap-4 justify-center"
+                    >
+                        <a
+                            href="#"
+                            class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-red-600 rounded font-bold hover:bg-red-700 transition"
+                        >
+                            <i data-lucide="upload-cloud" class="w-5 h-5"></i>
+                            Submit via EasyChair
+                        </a>
+                        <a
+                            href="#"
+                            class="inline-flex items-center justify-center gap-2 px-8 py-3 bg-transparent border border-slate-500 rounded font-bold hover:bg-slate-700 transition"
+                        >
+                            <i data-lucide="download" class="w-5 h-5"></i>
+                            Download Template
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="venue" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div class="reveal">
+                        <span
+                            class="text-red-600 font-bold uppercase tracking-widest text-sm"
+                            >Location</span
+                        >
+                        <h2 class="text-4xl font-bold text-slate-900 mt-2 mb-6">
+                            Venue & Travel
+                        </h2>
+                        <p class="text-slate-600 mb-8">
+                            The conference will be hosted at the Ramachandra College of Engineering,
+                            campus, situated in the lush green landscapes of
+                            Andhra Pradesh, providing a calm environment for
+                            academic discourse.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex gap-4">
+                                <div
+                                    class="bg-red-50 p-3 rounded-lg text-red-600 h-fit"
+                                >
+                                    <i
+                                        data-lucide="map-pin"
+                                        class="w-6 h-6"
+                                    ></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">
+                                        Ramachandra College of Engineering
+                                    </h4>
+                                    <p class="text-sm text-slate-500">
+                                        Eluru, Andhra Pradesh, India -
+                                        531162
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div
+                                    class="bg-red-50 p-3 rounded-lg text-red-600 h-fit"
+                                >
+                                    <i data-lucide="plane" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">
+                                        Nearest Airport
+                                    </h4>
+                                    <p class="text-sm text-slate-500">
+                                        Rajahmundry Airport (45km) or Vijayawada
+                                        Airport (120km)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div
+                                    class="bg-red-50 p-3 rounded-lg text-red-600 h-fit"
+                                >
+                                    <i data-lucide="train" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">
+                                        Nearest Railway Station
+                                    </h4>
+                                    <p class="text-sm text-slate-500">
+                                        Rajahmundry Railway Station (RJY)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="h-[400px] bg-slate-200 rounded-2xl overflow-hidden shadow-lg reveal delay-100"
+                    >
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8073406804087!2d81.02317177461232!3d16.686521622618162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3612e474fea6b7%3A0x1e7dd503fbbe0c89!2sRamachandra%20College%20of%20Engineering%20Eluru%20%7C%20RCEE!5e0!3m2!1sen!2sin!4v1764089921555!5m2!1sen!2sin"
+                            width="100%"
+                            height="100%"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                        >
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900"
+        >
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                    <div>
+                        <a href="#" class="flex items-center gap-2 mb-6">
+                            <div
+                                class="h-8 w-8 bg-red-600 rounded flex items-center justify-center text-white font-bold"
+                            >
+                                R
+                            </div>
+                            <span class="font-bold text-xl text-white"
+                                >ICRCE 2025</span
+                            >
+                        </a>
+                        <p class="text-sm leading-relaxed mb-6">
+                            An International Conference dedicated to the
+                            advancement of engineering and technology.
+                        </p>
+                        <div class="flex gap-4">
+                            <a
+                                href="#"
+                                class="hover:text-white transition transform hover:scale-110"
+                                ><i data-lucide="facebook" class="w-5 h-5"></i
+                            ></a>
+                            <a
+                                href="#"
+                                class="hover:text-white transition transform hover:scale-110"
+                                ><i data-lucide="twitter" class="w-5 h-5"></i
+                            ></a>
+                            <a
+                                href="#"
+                                class="hover:text-white transition transform hover:scale-110"
+                                ><i data-lucide="linkedin" class="w-5 h-5"></i
+                            ></a>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                        <ul class="space-y-3 text-sm">
+                            <li>
+                                <a
+                                    href="#about"
+                                    class="hover:text-red-500 transition"
+                                    >About Conference</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#committee"
+                                    class="hover:text-red-500 transition"
+                                    >Organizing Committee</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#cfp"
+                                    class="hover:text-red-500 transition"
+                                    >Call for Papers</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#schedule"
+                                    class="hover:text-red-500 transition"
+                                    >Program Schedule</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white font-bold mb-6">For Authors</h4>
+                        <ul class="space-y-3 text-sm">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-red-500 transition"
+                                    >Submission Guidelines</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-red-500 transition"
+                                    >Download Template</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-red-500 transition"
+                                    >Registration Policy</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:text-red-500 transition"
+                                    >Copyright Form</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-white font-bold mb-6">Contact Us</h4>
+                        <ul class="space-y-4 text-sm">
+                            <li class="flex items-start gap-3">
+                                <i
+                                    data-lucide="mail"
+                                    class="w-5 h-5 text-red-500 shrink-0"
+                                ></i>
+                                <span>icrce2025@rce.edu.in</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i
+                                    data-lucide="phone"
+                                    class="w-5 h-5 text-red-500 shrink-0"
+                                ></i>
+                                <span>+91 98765 43210</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i
+                                    data-lucide="map-pin"
+                                    class="w-5 h-5 text-red-500 shrink-0"
+                                ></i>
+                                <span
+                                    >Ramachandra College of Engineering, Eluru, Andhra
+                                    Pradesh</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="text-center pt-8 border-t border-slate-900 text-sm flex flex-col md:flex-row justify-between items-center"
+                >
+                    <p>© 2025 ICRCE. All rights reserved.</p>
+                    <p>Designed by RCE Web Team.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,68 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navigation Underline */
+.nav-link {
+    position: relative;
+    display: inline-block;
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 3px;
+    width: 100%;
+    background: #ef4444;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+.nav-link.active::after,
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* Hero Image */
+.hero-bg {
+    background-image: linear-gradient(
+            rgba(10, 10, 20, 0.85),
+            rgba(10, 10, 20, 0.7)
+        ),
+        url("https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Scroll Animation Classes */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered delays for grids */
+.delay-100 {
+    transition-delay: 100ms;
+}
+.delay-200 {
+    transition-delay: 200ms;
+}
+.delay-300 {
+    transition-delay: 300ms;
+}

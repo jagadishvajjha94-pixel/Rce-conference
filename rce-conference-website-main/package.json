@@ -1,0 +1,16 @@
+{
+    "name": "rce-conference-website",
+    "version": "1.0.0",
+    "description": "Ramachandra College of Engineering International Conference website",
+    "main": "script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "tailwind-watch": "npx @tailwindcss/cli -i ./src/styles.css -o ./public/styles.css --watch"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@tailwindcss/cli": "^4.1.17",
+        "tailwindcss": "^4.1.17"
+    }
+}
