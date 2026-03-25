@@ -36,8 +36,8 @@ nav {
 /* Hero Image */
 .hero-bg {
     background-image: linear-gradient(
-            rgba(10, 10, 20, 0.76),
-            rgba(10, 10, 20, 0.58)
+            rgba(10, 10, 20, 0.6),
+            rgba(10, 10, 20, 0.35)
         ),
         url("./images/papers-background.png");
     background-size: cover;
